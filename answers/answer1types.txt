@@ -1,0 +1,39 @@
+<table>
+<tr>
+    <td colspan="2" style="background-color:#3B7EA1; color:white; padding:10px; text-align: left;">
+        <h2>Variables for Week 2</h2></td>
+</tr>
+<tr>
+    <td style="text-align:left; font-size: 18px; width:33%;">Object Type</td>
+    <td style="text-align:left; font-size: 18px;">Optional Details</td>
+</tr>
+<tr>
+    <td style="text-align:left; font-size: 18px;"><b>boolean</b> <br />x = True<br />y = False</td>
+    <td style="text-align:left;">Booleans are true/false, 1/0 values.  Booleans are commonly used to create a <i>boolean-flag</i> and used to control the flow of our scripts based on whether some condition is equated to True or to False.  For example, <code>done = False; while not done</code> ... [do something].<br />
+    Python builds-in the idea of true in unusual ways.  For example, say we have a variable <code>j</code>.  If <code>j</code> has no value assigned to it, it is automatically False; if it has a value it is automatically True.  This means we can test if some condition is true <i>and</i> get the value of that condition!  E.g., x = 5.  say our code has <code>if x:</code>. This command is read as "if x has a value, it is true".  That means we have to have <code>x = 5</code> for the value to be True.  And we can query the value just by typing <code>print(x)</code> to see the value of 5.</td>
+    </tr>
+    <tr>
+        <td style="text-align:left; font-size: 18px;"><b>Binary</b> (bin)<br />
+        0 or 1</td>
+        <td style="text-align:left;">Binary is a way of counting using only 2 values: 0 and 1 (base 2).  Everything in computing can be converted to binary and back again, e.g., the integer 6 is 110; but since we use <u>bytes</u> a collection of 8 bits (0000000000), we see we can end-up wasting space (e.g., 00000110 is "6").  There are 2<sup>8</sup> or 256 different patterns of unique binary numbers from 00000000 to 11111111.  ASCII (American Standard Character Set for Information Interchange) uses this approach; UTF-8 uses a multibyte encoding so, depending on what we're doing we may end-up using 2<sup>16</sup> [65,536 combinations]; or we might pursue the UTF-8 1-4 byte approach [as python does] and see integers are <u>four</u> bytes (2<sup>32</sup>) combinations, meaning we can do negative to 0 to positive values 2<sup>31</sup>-1 (or the 0) and half  -2,147,483,647 to +2,147,483,648.  Python, then, by default uses 4 bytes for ints.  That's a lot of room.</td>
+    </tr>
+    <tr>
+        <td style="text-align:left; font-size: 18px;">
+            <b>Integer</b> (int)<br />x = 5</td>
+        <td style="text-align:left;">Integer, counting numbers, 0, 5, -3, 1234<br />
+        Side point: if you want a value > 2,147,483,647, you can use a long int type.  Python decides how many bytes to assign based on the actual size of the number.  This runs more slowly.</td>
+    </tr>
+    <tr>
+        <td style="text-align:left; font-size: 18px;"><b>Floats</b> (floating point)<br />x = 3.14159</td>
+        <td style="text-align:left;">It is common to round a float value down or up and to indicate the precision: For example, say i = 31.23451235.  Using the function round() and the parameter (2) we can say <code>round(i, 2)</code>.  Be aware that rounding may not round <u>up</u>!  Rounding 2.675 returns 2.67, not 2.68.  We&rsquo;ll practice more later; you'll want to import the math library.
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align:left; font-size: 18px;"><b>Complex</b> <br />x = 2 + 5j</td><td style="text-align:left;"> Complex numbers can hold imaginary numbers; using the . (dot operator) for complex numbers for .real (e.g., x.real) returns the real part of the complex number; .imag (e.g., x.imag) returns the imaginary part.</td>
+    </tr>
+    <tr>
+        <td style="text-align:left; font-size: 18px;"><b>Characters and Strings</b><br />a = 'h'<br />b='hello'<br />c="Bonjour"<br />c='你好'</td><td style="text-align:left;">characters and Strings of alphanumerics; notice that single quotes or double quotes tell python that the data are not numbers.<br />
+    Note that the "letters" are "encoded" according to a standard, called Unicode.  There is a 1:1 relationship between every letter/grapheme and its representation in code and with a unique full name.  For more,  visit the <a href="https://unicode.org" target="new">Unicode Code Pages</a> site.  The computational representation of this standard is UTF-8 (Unicode Transformation - 8 bits), which is a multi-byte encoding scheme.  This means if we can represent all the letters/numbers in our documents with 8 bits, then we'll use just 8; but some characters, like CJK (Chinese/Japanese/Korean) may need 16-24 bits.  [A bit is a single value 0 or 1 (false/true). 8 of them is a byte.]
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,11 @@
+<ol>
+<li><code>pwd</code></li>
+<li><code>ls</code></li>
+<li><code>ls -Fla</code></li>
+<li>The command <code>cd</code> changes the current directory. Using ! temporarily changes it for that notebook cell; using % will change it for entire notebook while it&rsquo;s open.
+</li>
+<li>
+<p>The exclamation mark (<code>!</code>) in a Jupyter Notebook cell sends the command to the shell (OS) to run.  <code>%</code> is used to execute special commands, called <b>magic commands</b>, that are specific to Jupyter Notebook and not valid as shell commands for example:%matplotlib inline to enable inline plots.  [Note that Visual Studio will require % instead of !.]
+</p>
+</li>
+<li><code>!whoami</li></ol>

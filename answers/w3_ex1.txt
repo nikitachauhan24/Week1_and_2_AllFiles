@@ -1,0 +1,20 @@
+<pre>
+def main():
+    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    sales = [2000, 4000, 6000, 4000, 2000]
+    week_total = 0
+    
+    # current day
+    i = 0
+    
+    print("Here are the weekly sales:")
+    
+    while i < len(days):
+        print(f"\t{days[i]}: ${sales[i]}")
+        week_total += sales[i]
+        i += 1
+    print("_"*20)
+    print(f"Week Total: ${week_total}.")
+
+main()
+</pre>

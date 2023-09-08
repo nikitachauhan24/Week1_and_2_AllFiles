@@ -1,0 +1,10 @@
+i = 5<br />
+c = 'a'<br />
+<p style="font-family: monospace; background-color:skyblue; padding:5">
+1)  print(f"i with 2 places after decimal {i:.2f}")</p>
+<p style="font-family: monospace;">2)  ord(c)</p>
+<p style="font-family: monospace; background-color:skyblue; padding:5">3)  bin(ord(c))</p>
+<p style="font-family: monospace;">4)  j = 5 <br />
+print(f"value {j}, Type: {type(j)} and ID: {id(j)}")</p>
+<p style="font-family: monospace; background-color:skyblue; padding:5">5) print(f"j: {type(j)} and id: {id(j)}\nx: {type(x)} and id: {id(x)}")</p>
+</blockquote>

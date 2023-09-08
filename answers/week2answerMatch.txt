@@ -1,0 +1,15 @@
+<pre>
+user_choice = str(input("Enter your choice: ")).lower()
+
+match user_option:
+    case '1':
+        print("Order Fish")
+    case '2':
+        print("Order Lobsters and Crabs")
+    case '3':
+        print("Order sauces or salads")
+    case 'q':
+        print("Thanks for your order. Bye!")
+    case _:
+        print("The input wasn't understood.")
+</pre>

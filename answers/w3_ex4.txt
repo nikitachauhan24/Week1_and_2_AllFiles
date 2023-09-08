@@ -1,0 +1,23 @@
+<pre>
+""" another solution is to use a list.  There are many, many ways to do this task - 
+this isn't the most efficient.  We'll learn more efficient techniques later.  For now, tho ... 
+"""
+dna_string = "AAACTCAAAGAGAAATTTAAA"
+dna_list = []  # an empty data structure
+dna_counts = []
+
+def update_count(i):
+    print(f"update {i}")
+    return i + 1
+
+for i in dna_string:
+    if i in dna_string and i not in dna_list:
+        dna_list.append(i)
+        dna_counts.append(1)
+    else:
+        index_of_char = dna_list.index(i)
+        dna_counts[index_of_char] = dna_counts[index_of_char] + 1
+
+for i in range(0, len(dna_list)): 
+    print(f"{i}: {dna_list[i]} = {dna_counts[i]}")
+</pre>

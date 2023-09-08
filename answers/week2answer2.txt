@@ -1,0 +1,19 @@
+<table width="100%" style="text-align:left; vertical-align:top; font-size:16px;">
+    <tr>
+        <td  style="text-align:left; vertical-align:top; width:30%;">
+    if<br />
+    if ... else<br />
+    if ... elif ... else<br />
+    match (version 3.10 and later)<br />
+    Nested if statements<br />
+    </td>
+    <td style="text-align:left; vertical-align:top; width:30%;">
+        while...<br />
+        nested while<br />
+        break<br />
+        continue<br />
+    </td>
+        <td style="text-align:left; vertical-align:top;">for ... </td>
+        <td style="text-align:left; vertical-align:top;">try ... except block</td>
+    </tr>
+</table>

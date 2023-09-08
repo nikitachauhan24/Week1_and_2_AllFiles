@@ -1,0 +1,29 @@
+<pre>
+# Answer
+list_one = ['cat', 'dog', 'fish', 'rob', 'toby']
+list_two = [400, 300, 1000, 302, 599]
+
+#1 
+merged_list = list_one + list_two
+print(merged_list)
+
+# 2
+merged_list.append('gb')
+print(f"\nAfter adding initials: {merged_list}")
+
+# 3 
+x = 1000 in merged_list
+print(f"\nchecking if 1000 in list: {x}")
+
+# 4
+msg = ""
+if 'gb' in merged_list:
+    msg = "Already in list."
+else:
+    merged_list.append('gb')
+    msg = "Had to add to list."
+print(f"\n{msg}\n")
+    
+#5
+print(merged_list.sort())
+</pre>

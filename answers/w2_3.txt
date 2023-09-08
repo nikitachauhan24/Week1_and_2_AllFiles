@@ -1,0 +1,17 @@
+import time
+start_time = time.time()
+
+my_matrix = [
+    ['a', 'b', 'c'],
+    [1, 2, 3],
+    ['X','Y','Z']
+]
+x = []
+# insert your code here.
+for row in my_matrix:
+    for num in row:
+        x.append(num)
+        
+print(x)
+
+print(f'Execution time: {time.time() - start_time} seconds')
